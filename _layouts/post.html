@@ -17,7 +17,7 @@ layout: default
 
   {% assign _v = page.cover | strip %}{% if _v != "" %}<img class="cover" src="{{ page.cover | relative_url }}" alt="">{% endif %}
 
-  <div class="post-body">{{ content }}</div>
+   <div class="post-body">{{ content | replace: '<br />', '</p><p class="ln">' }}</div>
 
   {% if page.tags and page.tags.size > 0 %}
   <div class="tags">{% for t in page.tags %}<span>#{{ t }}</span>{% endfor %}</div>
