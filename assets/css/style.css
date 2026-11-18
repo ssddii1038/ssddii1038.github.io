@@ -111,3 +111,8 @@ main{padding:56px 0 96px}
   .post-head h1{font-size:26px}
   .post-list h2{font-size:19px}
 }
+
+@media (max-width:600px){
+  body{word-break:normal;overflow-wrap:anywhere}
+  .post-body p,.post-body li,.post-body blockquote,.post-list .desc{text-align:justify}
+}
