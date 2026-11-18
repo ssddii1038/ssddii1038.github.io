@@ -123,3 +123,16 @@ main{padding:56px 0 96px}
   .post-head h1{font-size:22px}
   .post-list h2{font-size:19px}
 }
+
+/* ───── PC 전용 ───── */
+@media (min-width:601px){
+  :root{
+    --w:880px;          /* 본문 폭 */
+    --gap-line:.9em;    /* 엔터 한 번 */
+    --gap-para:4.5em;   /* 엔터 두 번 (빈 줄) */
+    --gap-scene:6em;    /* 장면 전환 */
+  }
+  body{font-size:17px;line-height:1.95}
+  .post-body p{text-indent:.35em}   /* 문단 첫머리 들여쓰기 */
+  .post-body p.gap{text-indent:0}
+}
