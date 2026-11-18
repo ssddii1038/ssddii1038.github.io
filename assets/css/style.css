@@ -112,9 +112,16 @@ main{padding:56px 0 96px}
 
 /* ───── 모바일 ───── */
 @media (max-width:600px){
-  :root{--gap-line:.8em;--gap-para:1.7em}
-  body{font-size:17px;line-height:1.85}
-  .wrap{padding:0 20px}
+  :root{
+    --gap-line:1em;     /* 엔터 한 번 */
+    --gap-para:3.5em;   /* 엔터 두 번 (빈 줄) */
+    --gap-scene:5em;    /* 장면 전환 */
+  }
+  body{font-size:16px;line-height:1.75}
+  .wrap{padding:0 16px}
+  .post-body p,.post-body li,.post-body blockquote,.post-list .desc{text-align:left}
+  .post-body p{text-indent:.35em}
+  .post-body p.gap{text-indent:0}
   .site-header{padding:28px 0 20px}
   .site-nav{gap:4px}
   .site-nav a{padding:8px 10px}
